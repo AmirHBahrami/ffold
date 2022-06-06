@@ -1,8 +1,7 @@
 #!/bin/bash
-./clean
-./compile
+./clean.sh
+./compile.sh
 mkdir deployed
-#touch deployed/MANIFEST.MF
-#echo "Main-Class: Main.class" >> deployed/MANIFEST.MF
 cd bin
+#it's just one class!
 jar cfe ../deployed/ffold.jar Main Main.class
